@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/pattern-bg.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  background-color: violet;
+  font-family: "Rubik", sans-serif;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 30px 0;
+  text-align: center;
+}
+
+input {
+  width: 35%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#ip ::placeholder {
+  color: red;
+}
+
+.inpBar {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  position: absolute;
+  left: 64%;
+  top: 98px;
+}
+
+button {
+  background-color: hsl(0, 1%, 23%);
+  border: none;
+  padding: 11.5px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* cool banne k liye */
+/* .title {
+  animation: diveIn 2s 1 forwards;
+}
+
+@keyframes diveIn {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+} */
+
+#dissect {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 80%;
+  margin: 0px auto;
+  padding: 35px 20px;
+  border-radius: 10px;
+  height: auto;
+
+  transform: translateY(50%);
+  position: relative;
+  z-index: 2;
+}
+
+#dissect p {
+  color: hsl(0, 0%, 59%);
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+
+#dissect h4 {
+  font-size: 22px;
+  color: hsl(0, 0%, 17%);
+}
+
+.part1 {
+  border-left: 1px solid hsl(0, 4%, 87%);
+  padding: 0 20px 0 20px;
+}
+.b {
+  border: none;
+}
+
+#mapid {
+  /* background-color: red; */
+  width: 100vw;
+  /* height: 500px; */
+  height: 435px;
+  position: relative;
+  z-index: 1;
+  /* transform: translate(0px, -110px); */
+}
+
+@media (max-width: 733px) {
+  #dissect {
+    width: 95%;
+  }
+  input {
+    width: 45%;
+  }
+  .btn {
+    left: 65%;
+  }
+}
+
+@media (max-width: 610px) {
+  #dissect {
+    flex-direction: column;
+    transform: translateY(70px);
+    width: 85%;
+    padding: 20px 0;
+  }
+  .part1 {
+    border: none;
+  }
+  .part1 {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  input {
+    width: 55%;
+  }
+  .btn {
+    left: 69%;
+  }
+}
+
+@media (max-width: 498px) {
+  input {
+    width: 65%;
+  }
+  .btn {
+    left: 72.5%;
+  }
+}
+
+@media (max-width: 371px) {
+  input {
+    width: 75%;
+  }
+  .btn {
+    left: 74%;
+  }
+}
